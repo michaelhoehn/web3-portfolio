@@ -1,23 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html>
+  <head>
+    <title>Artist Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CMPLX Media</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>Something</nav>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="#">Artist Name</a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Artist Name</h1>
+        <p>Artist statement here</p>
+      </div>
     </header>
-    <article class="someClass">
-        <h2>CMPLX</h2>
-        <p>architect // generator</p>
-    </article>
-    <footer></footer>
-</body>
 
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            sed enim mauris. Nunc id turpis eget elit aliquam lobortis. Praesent
+            in massa vel mi volutpat iaculis. Sed euismod euismod odio, id
+            dictum nibh ultricies a. Nulla in ipsum in quam rhoncus vehicula.
+            Donec vel semper tellus, ut rhoncus orci. Aliquam vel ex eget odio
+            eleifend semper.
+          </p>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="container">
+          <h2>Works</h2>
+          <div class="gallery">
+            <a href="work1.jpg" class="gallery-item">
+              <img src="work1.jpg" alt="Work Title" />
+              <div class="overlay">
+                <h3>Work Title</h3>
+                <p>Description of the work</p>
+              </div>
+            </a>
+            <a href="work2.jpg" class="gallery-item">
+              <img src="work2.jpg" alt="Work Title" />
+              <div class="overlay">
+                <h3>Work Title</h3>
+                <p>Description of the work</p>
+              </div>
+            </a>
+            <a href="work3.jpg" class="gallery-item">
+              <img src="work3.jpg" alt="Work Title" />
+              <div class="overlay">
+                <h3>Work Title</h3>
+                <p>Description of the work</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
