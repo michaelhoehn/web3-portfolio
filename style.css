@@ -6,6 +6,11 @@ header {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -17,9 +22,10 @@ body {
 }
 
 nav {
-  font-size: 25px;
+  font-size: 50px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -30,6 +36,7 @@ footer {
 
 #contact {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
@@ -44,4 +51,26 @@ main {
 .logo {
   width: 100%;
   flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link .comma {
+  padding-right: 0.1em;
+}
+
+a.link {
+  display: flex;
+}
+
+.external {
+  vertical-align: top;
+  padding-left: 0.1em;
+  font-size: 0.5em;
 }
