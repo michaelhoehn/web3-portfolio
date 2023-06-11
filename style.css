@@ -24,6 +24,7 @@ body {
   line-height: 1;
   transition: background 300ms ease-in 200ms;
   /* transition: all 0.3s ease-in-out; */
+  overflow: hidden;
 }
 
 nav {

@@ -82,7 +82,7 @@
           const li = document.querySelectorAll("li");
 
           li.forEach((el) => {
-            el.addEventListener("mouseenter", () => {
+            el.addEventListener("mouseover", () => {
               let bg = el.getAttribute("data-bg");
               body.style.background = `url(${bg}) no-repeat center /cover`;
             });
