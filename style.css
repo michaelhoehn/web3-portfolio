@@ -5,6 +5,12 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
 header {
   width: 100%;
 }
@@ -15,6 +21,7 @@ a {
 }
 
 body {
+  /* background: url(./images/1.jpg) no-repeat center / cover; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,6 +34,10 @@ nav {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+nav:hover a {
+  color: rgba(109, 109, 109, 0.2);
 }
 
 footer {
@@ -71,12 +82,14 @@ a.link {
 }
 
 .external {
-  vertical-align: top;
+  vertical-align: super;
   padding-left: 0.1em;
   font-size: 0.5em;
 }
 
 a.link:hover {
-  font-style: italic;
-  z-index: 10;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
