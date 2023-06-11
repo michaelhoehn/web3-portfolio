@@ -4,40 +4,90 @@
     <title>Artist Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
-    <script src="bgShift.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
+    />
   </head>
 
   <body>
     <header>
       <nav>
-        <a class="link" href="#">
-          <span class="link">Connect Wallet</span>
-          <span class="comma">, </span>
-        </a>
-        <a data-bg="1.jpg" class="link">
-          <span>What I do</span>
-          <span class="comma">, </span>
-        </a>
-        <a data-bg="2.jpg" class="link">
-          <span>Vision</span>
-          <span class="comma">, </span>
-        </a>
-        <a data-bg="3.jpg" class="link" href="#">
-          <span>Spatial Complexities</span>
-          <span class="external">(↗)</span>
-          <span class="comma">, </span>
-        </a>
-        <a data-bg="4.png" class="link" href="#">
-          <span>The Junction</span>
-          <span class="external">(↗)</span>
-          <span class="comma">, </span>
-        </a>
-        <a data-bg="5.jpg" class="link" href="#">
-          <span>Black Diamond</span>
-          <span class="external">(↗)</span>
-        </a>
+        <ul>
+          <li>
+            <a class="link" href="#">
+              <span class="link">Connect Wallet</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link">
+              <span>Mint</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link">
+              <!-- To-do: soft load #Vision page over top -->
+              <span>Vision</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li data-bg="./images/1.png">
+            <a
+              class="link"
+              href="https://foundation.app/collection/cmplx?attr=attributes.Collection%3ASpatial+Complexity"
+              target="_blank"
+            >
+              <span>Spatial Complexities</span>
+              <span class="external">(↗)</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li data-bg="./images/2.png">
+            <a
+              class="link"
+              href="https://foundation.app/collection/cmplx?attr=attributes.Collection%3AUNBUILT"
+              target="_blank"
+            >
+              <span>UNBUILT</span>
+              <span class="external">(↗)</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li data-bg="./images/3.png">
+            <a
+              class="link"
+              href="https://opensea.io/assets/ethereum/0x449f661c53ae0611a24c2883a910a563a7e42489/128"
+              target="_blank"
+            >
+              <span>The Junction</span>
+              <span class="external">(↗)</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li data-bg="./images/4.png">
+            <a
+              class="link"
+              href="https://opensea.io/assets/ethereum/0x449f661c53ae0611a24c2883a910a563a7e42489/106"
+              target="_blank"
+            >
+              <span>Black Diamond</span>
+              <span class="external">(↗)</span>
+            </a>
+          </li>
+        </ul>
+        <script>
+          const body = document.querySelector("body");
+          const li = document.querySelectorAll("li");
+
+          li.forEach((el) => {
+            el.addEventListener("mouseenter", () => {
+              let bg = el.getAttribute("data-bg");
+              body.style.background = `url(${bg}) no-repeat center /cover`;
+            });
+          });
+        </script>
       </nav>
     </header>
     <main>
@@ -50,7 +100,7 @@
         <a href="#">
           <span>Contact</span>
         </a>
-        <a href="#">
+        <a href="https://twitter.com/c_mplx" target="_blank">
           <span>Twitter</span>
         </a>
         <a href="#">
