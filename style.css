@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0px 2px 0px;
   font-family: "Hanken Grotesk";
   text-transform: uppercase;
   font-weight: bold;
@@ -28,6 +29,7 @@ body {
 }
 
 nav {
+  padding-top: 10px;
   font-size: 50px;
 }
 
@@ -59,6 +61,7 @@ footer {
   display: flex;
   align-items: flex-end;
   margin-top: auto;
+  padding-bottom: 10px;
 }
 
 footer a {
