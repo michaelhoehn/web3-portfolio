@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mint c_mplx art</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://connect.manifoldxyz.dev/latest/connect.css"
-    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
     />
+    <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://connect.manifoldxyz.dev/2.2.4/connect.css"
+    />
+    <script src="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.css"
+    />
   </head>
   <body>
     <div
+      id="connect"
       data-widget="m-connect"
       data-grant-type="signature"
       data-client-id="92f5bc13152a5f87df471987a773b23a2a70617b73f105b5717db03917b8feb3"
       data-app-name="c_mplx"
+      data-network="1"
     ></div>
+    <div data-widget="m-card-catalog" data-id="439" data-network="1"></div>
   </body>
   <style>
     /* All manifold styles must go here */
@@ -34,18 +42,18 @@
         sans-serif;
       --manifold-text--font-family--header: "Hanken Grotesk", Helvetica, Arial,
         sans-serif;
-      --manifold-border--width: 5px;
+      --manifold-border--width: 0px;
       /* --manifold-border--color: hsl(0, 100%, 68%);
 --manifold-border--radius: 100px; */
     }
 
     #m-connection,
     .m-connection {
-      --manifold-border--radius: 100px;
-      --manifold-border--color: hsla(0, 100%, 50%, 0.87);
-      --manifold-text--font-size--body: 16px;
+      --manifold-border--radius: 5px;
+      --manifold-border--color: hsla(0, 0%, 0%, 0.87);
+      --manifold-text--font-size--body: 12px;
       height: auto;
-      width: 210px;
+      width: 200px;
       text-align: center;
       display: flex;
       flex-direction: column;

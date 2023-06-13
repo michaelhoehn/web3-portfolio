@@ -117,3 +117,10 @@ a.link:hover {
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
 }
+
+#connect {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
