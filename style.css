@@ -30,7 +30,7 @@ body {
 
 nav {
   padding-top: 10px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* nav:hover a {
@@ -123,4 +123,16 @@ a.link:hover {
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+.listings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+
+.listings .art {
+  display: flex;
+  width: 20%;
 }
