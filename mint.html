@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mint c_mplx art</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="mint-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
+    />
+    <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://connect.manifoldxyz.dev/2.2.4/connect.css"
+    />
+    <script src="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.css"
+    />
+  </head>
+  <body style="background-color: black">
+    <nav>
+      <ul>
+        <li>
+          <a class="link" href="index.html">
+            <span>About</span>
+            <span class="comma">, </span>
+          </a>
+        </li>
+        <li>
+          <a class="link link-active" href="mint.html">
+            <span>Mint</span>
+            <span class="comma">, </span>
+          </a>
+        </li>
+        <li data-bg="./images/1.png">
+          <a
+            class="link"
+            href="https://foundation.app/collection/cmplx?attr=attributes.Collection%3ASpatial+Complexity"
+            target="_blank"
+          >
+            <span>Spatial Complexities</span>
+            <span class="external">(↗)</span>
+            <span class="comma">, </span>
+          </a>
+        </li>
+        <li data-bg="./images/2.png">
+          <a
+            class="link"
+            href="https://foundation.app/collection/cmplx?attr=attributes.Collection%3AUNBUILT"
+            target="_blank"
+          >
+            <span>UNBUILT</span>
+            <span class="external">(↗)</span>
+            <span class="comma">, </span>
+          </a>
+        </li>
+        <li data-bg="./images/3.png">
+          <a
+            class="link"
+            href="https://opensea.io/assets/ethereum/0x449f661c53ae0611a24c2883a910a563a7e42489/128"
+            target="_blank"
+          >
+            <span>The Junction</span>
+            <span class="external">(↗)</span>
+            <span class="comma">, </span>
+          </a>
+        </li>
+        <li data-bg="./images/4.png">
+          <a
+            class="link"
+            href="https://opensea.io/assets/ethereum/0x449f661c53ae0611a24c2883a910a563a7e42489/106"
+            target="_blank"
+          >
+            <span>Black Diamond</span>
+            <span class="external">(↗)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="listings-container">
+      <div
+        id="connect"
+        data-widget="m-connect"
+        data-grant-type="signature"
+        data-client-id="92f5bc13152a5f87df471987a773b23a2a70617b73f105b5717db03917b8feb3"
+        data-app-name="c_mplx"
+        data-network="1"
+      ></div>
+      <div
+        class="art"
+        data-widget="m-layout-complete-listing"
+        data-id="439"
+        data-network="1"
+      ></div>
+    </div>
+  </body>
+  <style>
+    /* All manifold styles must go here */
+    .manifold {
+      --manifold-theme--color--primary: hsl(0, 0%, 100%);
+      --manifold-theme--color--secondary: hsl(0, 0%, 0%);
+      /* --manifold-theme--color--error: red; */
+      --manifold-text--font-family--body: "Hanken Grotesk", Helvetica, Arial,
+        sans-serif;
+      --manifold-text--font-family--header: "Hanken Grotesk", Helvetica, Arial,
+        sans-serif;
+      --manifold-border--width: 0px;
+      /* --manifold-border--color: hsl(0, 100%, 68%);
+--manifold-border--radius: 100px; */
+    }
+
+    #m-connection,
+    .m-connection {
+      --manifold-border--radius: 0px;
+      --manifold-border--color: hsla(0, 0%, 100%, 0.87);
+      --manifold-text--font-size--body: 12px;
+      --manifold-border--width: 1px;
+      height: auto;
+      width: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+    }
+  </style>
+  <footer>
+    <div id="contact">
+      <a href="#">
+        <span>Contact</span>
+      </a>
+      <a href="https://twitter.com/c_mplx" target="_blank">
+        <span>Twitter</span>
+      </a>
+      <a href="#">
+        <span>Instagram</span>
+      </a>
+    </div>
+  </footer>
+</html>
