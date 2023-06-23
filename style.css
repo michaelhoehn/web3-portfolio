@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+  width: 75%;
   padding-top: 5px;
   font-size: 40px;
   position: fixed;
@@ -58,6 +59,7 @@ footer {
   align-items: flex-end;
   margin-top: 10px;
   padding-bottom: 10px;
+  font-size: 15px;
 }
 
 footer a {
@@ -83,7 +85,7 @@ footer a {
   height: calc(100vh - 50px);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 0.5fr 3.5fr;
   align-items: end;
 }
 

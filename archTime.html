@@ -7,6 +7,7 @@
     <title>c_mplx</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="mint-style.css" />
+    <link rel="stylesheet" type="text/css" href="at-style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
@@ -32,13 +33,13 @@
           </a>
         </li>
         <li>
-          <a class="link link-active" href="mint.html">
+          <a class="link" href="mint.html">
             <span>Mint</span>
             <span class="comma">, </span>
           </a>
         </li>
         <li>
-          <a class="link" href="archTime.html">
+          <a class="link link-active" href="archTime.html">
             <span>A&T Exhibition</span>
             <span class="comma">, </span>
           </a>
@@ -88,52 +89,20 @@
         </li>
       </ul>
     </nav>
-    <div class="listings-container">
-      <div
-        id="connect"
-        data-widget="m-connect"
-        data-grant-type="signature"
-        data-client-id="92f5bc13152a5f87df471987a773b23a2a70617b73f105b5717db03917b8feb3"
-        data-app-name="c_mplx"
-        data-network="1"
-      ></div>
-      <div
-        class="art"
-        data-widget="m-layout-complete-listing"
-        data-id="439"
-        data-network="1"
-      ></div>
+    <div class="space-container">
+      <iframe
+        class="space-preview"
+        width="100%"
+        height="100%"
+        src="https://oncyber.io/arch-time"
+      ></iframe>
+      <div class="button-container">
+        <button class="button">Purchase</button>
+        <button class="button">Oncyber</button>
+      </div>
     </div>
+    <div class="works-container"></div>
   </body>
-  <style>
-    /* All manifold styles must go here */
-    .manifold {
-      --manifold-theme--color--primary: hsl(0, 0%, 100%);
-      --manifold-theme--color--secondary: hsl(0, 0%, 0%);
-      /* --manifold-theme--color--error: red; */
-      --manifold-text--font-family--body: "Hanken Grotesk", Helvetica, Arial,
-        sans-serif;
-      --manifold-text--font-family--header: "Hanken Grotesk", Helvetica, Arial,
-        sans-serif;
-      --manifold-border--width: 0px;
-      /* --manifold-border--color: hsl(0, 100%, 68%);
---manifold-border--radius: 100px; */
-    }
-
-    #m-connection,
-    .m-connection {
-      --manifold-border--radius: 0px;
-      --manifold-border--color: hsla(0, 0%, 100%, 0.87);
-      --manifold-text--font-size--body: 12px;
-      --manifold-border--width: 0px;
-      height: auto;
-      width: 200px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: right;
-    }
-  </style>
   <footer>
     <div id="contact">
       <a href="#">
