@@ -82,41 +82,174 @@ iframe {
   z-index: 2;
 }
 
+.spacer {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
 /* Curation Styling */
 
-.works-container {
-  display: grid;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 150px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(6, 500px);
-  column-gap: 20px;
-  row-gap: 20px;
-  justify-items: stretch;
-}
-
-.art-card {
-  color: white;
-  border: 1px solid white;
+.flex-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  gap: 20px;
+  height: 100%;
+  justify-content: center;
 }
 
-.works-container .cta {
-  margin-top: auto;
-  border-top: 1px solid white;
-  text-align: center;
+.flex-item {
+  position: relative;
+  flex-shrink: 0;
+  flex-basis: calc(25% - 2rem);
+  min-width: 350px;
+  max-width: 400px;
+  height: 500px;
 }
 
-/* .cta {
-  background-color: white;
-  color: black;
+.flex-item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.listing {
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.listing-details-container {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  height: 100px;
+}
+
+.listing-details {
+  height: 100%;
+  backdrop-filter: blur(10px);
+  margin: 8px;
+}
+
+.listing-details .listing-name-price-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 60% 40%;
+  height: 100%;
+}
+
+.listing-details .listing-name {
+  display: grid;
+  color: white;
+}
+
+.listing-name {
+  padding-left: 8px;
+}
+
+.listing-price {
+  color: white;
+  grid-column-start: 2;
+  justify-self: end;
+  align-self: center;
+  padding-right: 8px;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+.art-name {
+  align-self: center;
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+.artist-name {
+  align-self: center;
+  grid-row-start: 2;
+  font-size: 15px;
+  padding-top: 6px;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  align-content: flex-start;
+  justify-self: stretch;
+}
+
+.description {
+  padding-top: 20px;
+  align-items: flex-start;
+  color: white;
+  text-align: justify;
+}
+
+.btn-container {
+  width: 100%;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  height: 50px;
+  padding-top: 20px;
+}
+
+a.btn-collect {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-content: center;
+  justify-self: stretch;
+  justify-content: center;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 2;
   text-decoration: none;
+  border-top: 1px solid white;
+}
+
+a.btn-collect:hover {
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Artists images */
+
+.art-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+#cmplx {
+  background-image: url(/images/arch-time/1.png);
+}
+
+#noah {
+  background-image: url(/images/arch-time/2.png);
+}
+
+#sz {
+  background-image: url(/images/arch-time/3.png);
+}
+
+#graphica {
+  background-image: url(/images/arch-time/4.png);
+}
+
+/* .artwork > img {
+  width: 100%;
+  height: 455px;
+  object-fit: cover;
+  align-self: center;
 } */
 
-.btn-collect {
+/* .btn-collect {
   display: flex;
   justify-items: stretch;
   justify-content: center;
@@ -134,44 +267,18 @@ iframe {
   transition: all 0.2s ease-in;
 }
 
-/* .cta a {
-  text-decoration: none;
-  color: black;
-} */
-
-/* .cta:hover {
-  background-color: black;
-  cursor: pointer;
-} */
-
 .title-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 4fr;
+  /* display: flex
   flex-direction: column;
+  flex-shrink: 0;
   gap: 20px;
   justify-content: space-between;
-}
-
-.title {
-  display: flex;
-  font-size: 50px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: white;
-  grid-column-start: 1;
-  align-content: flex-start;
-  justify-self: stretch;
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: white;
-  text-align: justify;
-  grid-row-start: 2;
-  /* grid-row-end: 4; */
-  grid-column-start: 1;
-}
+  min-width: 400px; */
+/* }
+*/
 
 .inline-link {
   margin-top: 0;
@@ -213,4 +320,11 @@ footer a {
   .title {
     font-size: 30px;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-item {
+    flex-basis: calc(33.333% - 2rem - 32px);
+    margin-left: calc(1rem + 16px);
+    margin-right: calc(1rem + 16px);
 }
