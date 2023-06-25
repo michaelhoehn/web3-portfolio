@@ -38,12 +38,14 @@ nav {
 .button {
   text-decoration: none;
   border: 1px solid white;
-  width: 20%;
+  width: 30%;
   background-color: black;
   color: white;
   border-color: white;
   text-align: center;
   padding: 15px 0;
+  align-self: center;
+  text-wrap: nowrap;
 }
 
 .button:hover {
@@ -140,6 +142,7 @@ iframe {
   grid-template-columns: 60% 40%;
   grid-template-rows: 60% 40%;
   height: 100%;
+  white-space: nowrap;
 }
 
 .listing-details .listing-name {
@@ -215,70 +218,106 @@ a.btn-collect {
 }
 
 a.btn-collect:hover {
-  background-color: black;
+  color: black;
+  background-color: white;
   transition: all 0.2s ease-in-out;
+}
+
+a.btn-collect.sold {
+  color: red;
 }
 
 /* Artists images */
 
 .art-image {
+  box-sizing: border-box;
   background-size: cover;
   background-position: center center;
 }
 
+.art-image:hover {
+  border: 5px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+#andy {
+  background-image: url(/images/arch-time/andy.PNG);
+}
+#beautifool {
+  background-image: url(/images/arch-time/beautifool.PNG);
+}
+#bruno {
+  background-image: url(/images/arch-time/bruno.PNG);
+}
+#ch {
+  background-image: url(/images/arch-time/ch.PNG);
+}
+#clemens {
+  background-image: url(/images/arch-time/clemens.PNG);
+}
 #cmplx {
-  background-image: url(/images/arch-time/1.png);
+  background-image: url(/images/arch-time/cmplx.PNG);
 }
-
-#noah {
-  background-image: url(/images/arch-time/2.png);
+#dub {
+  background-image: url(/images/arch-time/dubhz0.PNG);
 }
-
-#sz {
-  background-image: url(/images/arch-time/3.png);
+#ellen {
+  background-image: url(/images/arch-time/ellen.PNG);
 }
-
+#erik {
+  background-image: url(/images/arch-time/erik.PNG);
+}
+#evan {
+  background-image: url(/images/arch-time/evan.PNG);
+}
+#fawkes {
+  background-image: url(/images/arch-time/fawkes.PNG);
+}
 #graphica {
-  background-image: url(/images/arch-time/4.png);
+  background-image: url(/images/arch-time/graphica.PNG);
 }
-
-/* .artwork > img {
-  width: 100%;
-  height: 455px;
-  object-fit: cover;
-  align-self: center;
-} */
-
-/* .btn-collect {
-  display: flex;
-  justify-items: stretch;
-  justify-content: center;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  color: black;
-  text-align: center;
+#heather {
+  background-image: url(/images/arch-time/heather.PNG);
 }
-
-.btn-collect:hover {
-  background-color: black;
-  color: white;
-  transition: all 0.2s ease-in;
+#jordan {
+  background-image: url(/images/arch-time/jordan.PNG);
 }
-
-.title-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 4fr;
-  /* display: flex
-  flex-direction: column;
-  flex-shrink: 0;
-  gap: 20px;
-  justify-content: space-between;
-  min-width: 400px; */
-/* }
-*/
+#koben {
+  background-image: url(/images/arch-time/koben.PNG);
+}
+#lap {
+  background-image: url(/images/arch-time/LAP.PNG);
+}
+#luigi {
+  background-image: url(/images/arch-time/luigi.PNG);
+}
+#noah {
+  background-image: url(/images/arch-time/noah.PNG);
+}
+#pop {
+  background-image: url(/images/arch-time/popszi.PNG);
+}
+#rich {
+  background-image: url(/images/arch-time/rich.PNG);
+}
+#ryan {
+  background-image: url(/images/arch-time/ryan.PNG);
+}
+#sepp {
+  background-image: url(/images/arch-time/sepp.PNG);
+}
+#sz {
+  background-image: url(/images/arch-time/szkandal.PNG);
+}
+#taimaz {
+  background-image: url(/images/arch-time/taimaz.PNG);
+}
+#uc {
+  background-image: url(/images/arch-time/UC.PNG);
+}
+#vic {
+  background-image: url(/images/arch-time/vic.PNG);
+}
 
 .inline-link {
   margin-top: 0;
@@ -293,29 +332,6 @@ a.btn-collect:hover {
   transition: all 0.2s ease-in;
 }
 
-/* Footer Styling */
-
-footer {
-  background: black;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 2rem;
-  font-size: 15px;
-  z-index: 1;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-#contact a:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.2s ease-in;
-}
-
 @media screen and (max-width: 800px) {
   .title {
     font-size: 30px;
@@ -327,4 +343,19 @@ footer a {
     flex-basis: calc(33.333% - 2rem - 32px);
     margin-left: calc(1rem + 16px);
     margin-right: calc(1rem + 16px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .space-container {
+    grid-template-rows: 25vh 50vh 10vh;
+  }
+  iframe {
+    /* padding-top: 50px; */
+    height: 400px;
+  }
+  .button {
+    width: 33%;
+    font-size: 10px;
+  }
 }

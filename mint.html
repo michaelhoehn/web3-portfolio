@@ -22,6 +22,20 @@
       href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.css"
     />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KJFN0KR2ER"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJFN0KR2ER");
+  </script>
   <body style="background-color: black">
     <nav>
       <ul>
@@ -104,7 +118,7 @@
         data-network="1"
       ></div>
     </div>
-    <div class="whitespace"></div>
+    <hr class="spacer" />
   </body>
   <style>
     /* All manifold styles must go here */
@@ -136,15 +150,19 @@
     }
   </style>
   <footer>
-    <div class="first" id="contact">
-      <a href="#">
-        <span>Contact</span>
+    <div id="contact">
+      <a
+        class="first"
+        href="https://twitter.com/messages/compose?recipient_id=1475544191119757316&text=Hello%20c_mplx!"
+        target="_blank"
+      >
+        <span>Collaborate</span>
       </a>
       <a href="https://twitter.com/c_mplx" target="_blank">
         <span>Twitter</span>
       </a>
-      <a class="last" href="#">
-        <span>Instagram</span>
+      <a class="last" href="https://foundation.app/@c_mplx" target="_blank">
+        <span>Foundation</span>
       </a>
     </div>
   </footer>
