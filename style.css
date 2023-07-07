@@ -131,12 +131,37 @@ a.link:hover {
   transition: all 0.2s ease-in-out;
 }
 
+@keyframes fadeInOutAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .about {
   display: grid;
   justify-content: start;
   grid-column-start: 1;
   grid-row-start: 2;
   font-size: 20px;
+}
+
+#load1 {
+  animation: fadeInOutAnimation 1s;
+}
+#load2 {
+  animation: fadeInOutAnimation 1.5s;
+}
+#load3 {
+  animation: fadeInOutAnimation 2s;
+}
+#load4 {
+  animation: fadeInOutAnimation 2.5s;
+}
+#load5 {
+  animation: fadeInOutAnimation 3s;
 }
 
 @media screen and (max-width: 900px) {
