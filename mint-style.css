@@ -50,3 +50,9 @@ nav {
     justify-items: center;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .listings-container #connect {
+    justify-items: center;
+  }
+}

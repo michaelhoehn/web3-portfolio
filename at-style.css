@@ -332,10 +332,13 @@ a.btn-collect.sold {
   transition: all 0.2s ease-in;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .title {
     font-size: 30px;
   }
+
+  .space-container {
+    grid-template-rows: 5vh 50vh 10vh;
 }
 
 @media screen and (max-width: 1200px) {
