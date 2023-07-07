@@ -44,3 +44,9 @@ nav {
   /* margin-top: 10px; */
   z-index: 1;
 }
+
+@media screen and (max-width: 400px) {
+  .listings-container #connect {
+    justify-items: center;
+  }
+}

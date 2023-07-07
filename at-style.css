@@ -348,14 +348,21 @@ a.btn-collect.sold {
 
 @media screen and (max-width: 400px) {
   .space-container {
-    grid-template-rows: 25vh 50vh 10vh;
+    grid-template-rows: 5vh 50vh 10vh;
   }
+
   iframe {
     /* padding-top: 50px; */
+    grid-row-start: 2;
     height: 400px;
   }
+
   .button {
     width: 33%;
     font-size: 10px;
+  }
+
+  .top-gradient {
+    display: none;
   }
 }

@@ -21,13 +21,9 @@ nav {
   padding-top: 20px;
   padding-left: 20px;
   font-size: 40px;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
 }
-
-/* nav:hover a {
-  color: rgba(109, 109, 109, 0.8);
-} */
 
 ul {
   padding: 0;
@@ -94,8 +90,8 @@ footer a {
   height: calc(100vh - 50px);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.5fr 3.5fr;
-  align-items: end;
+  grid-template-rows: 0.5fr 1fr 2.5fr;
+  /* align-items: end; */
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -105,7 +101,9 @@ footer a {
 }
 
 .logo {
-  grid-row-start: 2;
+  display: grid;
+  grid-row-start: 3;
+  align-items: end;
 }
 
 .link {
@@ -121,6 +119,7 @@ a.link {
 }
 
 .external {
+  /* content: "\U0000FE0E"; */
   vertical-align: super;
   padding-left: 0.1em;
   font-size: 0.5em;
@@ -132,13 +131,11 @@ a.link:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.hidden {
-  display: none;
-}
-
-header a + .hidden {
-  display: block;
-  color: red;
+.about {
+  display: grid;
+  justify-content: start;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
 @media screen and (max-width: 900px) {
@@ -153,13 +150,38 @@ header a + .hidden {
 }
 
 @media screen and (max-width: 400px) {
+  .grid-container {
+    grid-template-rows: repeat(2, 1fr);
+    height: calc(100vh - 300px);
+  }
+
   .grid-container .logo {
-    padding-bottom: 10%;
+    grid-row-start: 2;
+    margin-bottom: 10%;
+  }
+
+  .about {
+    display: grid;
+    align-items: end;
+    grid-row-start: 1;
+    font-size: 12px;
+  }
+
+  ul {
+    font-size: 20px;
+    display: block;
+    line-height: 25px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .grid-container .logo {
     padding-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  nav {
+    position: fixed;
   }
 }
