@@ -389,6 +389,10 @@ a.btn-collect.sold {
 } */
 
 @media screen and (max-width: 600px) {
+  nav {
+    height: 250px;
+  }
+
   .space-container {
     height: 1080px;
     grid-template-columns: 100%;
