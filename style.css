@@ -197,9 +197,9 @@ a.link:hover {
     font-size: 12px;
   }
 
-  nav {
+  /* nav {
     height: 250px;
-  }
+  } */
 }
 
 @media screen and (max-width: 850px) {
@@ -209,6 +209,7 @@ a.link:hover {
   }
 
   .grid-container .logo {
+    padding-top: 30px;
     grid-row-start: 3;
   }
 
@@ -218,13 +219,17 @@ a.link:hover {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   ul {
     font-size: 30px;
     display: block;
     line-height: 30px;
+  }
+
+  nav {
+    height: 250px;
   }
 }
 
