@@ -216,6 +216,14 @@ hr {
   padding-bottom: 40px;
 }
 
+.title-exhibition {
+  display: grid;
+  font-size: 50px;
+  color: white;
+  align-content: flex-start;
+  padding-bottom: 20px;
+}
+
 .description {
   padding-top: 20px;
   align-items: flex-start;
