@@ -16,20 +16,23 @@ body {
 }
 
 nav {
-  display: block;
-  width: 75%;
+  display: grid;
+  width: 100%;
   padding-top: 20px;
-  padding-left: 20px;
   font-size: 40px;
-  /* position: fixed; */
   z-index: 1;
+  grid-row-start: 1;
+  /* position: fixed; */
+  /* padding-left: 20px; */
 }
 
 ul {
+  width: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  height: 40px;
 }
 
 ul li {
@@ -87,7 +90,7 @@ footer a {
 }
 
 .grid-container {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -97,7 +100,8 @@ footer a {
 }
 
 .grid-container .logo {
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  align-items: end;
 }
 
 .logo {
@@ -164,27 +168,26 @@ a.link:hover {
   animation: fadeInOutAnimation 3s;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   nav {
-    font-size: 20px;
-    box-sizing: border-box;
+    font-size: 30px;
   }
 
   footer {
     padding-bottom: 20px;
   }
-}
+} */
 
 @media screen and (max-width: 400px) {
   .grid-container {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 50px);
+    grid-template-columns: 100%;
   }
 
   .grid-container .logo {
     grid-row-start: 2;
-    margin-bottom: 10%;
-    align-items: start;
-    padding-top: 25%;
+    /* align-items: start;
+    padding-top: 25%; */
   }
 
   .about {
@@ -198,37 +201,42 @@ a.link:hover {
     font-size: 20px;
     display: block;
     line-height: 25px;
+  }
+
+  #contact {
+    font-size: 12px;
+  }
+
+  nav {
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .grid-container {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 100px);
   }
 
   .grid-container .logo {
-    grid-row-start: 2;
-    margin-bottom: 10%;
-    padding-top: 25%;
-    align-items: start;
+    grid-row-start: 3;
   }
 
   .about {
     display: grid;
     align-items: end;
-    grid-row-start: 1;
+    grid-row-start: 2;
     font-size: 12px;
   }
 
   ul {
-    font-size: 20px;
+    font-size: 30px;
     display: block;
-    line-height: 25px;
+    line-height: 30px;
   }
 }
 
-@media screen and (min-width: 850px) {
+/* @media screen and (min-width: 850px) {
   nav {
     position: fixed;
   }
-}
+} */

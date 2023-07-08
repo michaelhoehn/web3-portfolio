@@ -24,14 +24,40 @@ nav {
 
 .listings-container {
   display: grid;
-  grid-template-columns: 5% 90% 5%;
-  grid-template-rows: 10vh 75vh;
+  height: calc(100vh - 50px);
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr) 200px;
+  /* align-items: end; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .art {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   justify-items: center;
+}
+
+.spacer-text {
+  display: grid;
+  padding-top: 20px;
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-items: center;
+}
+
+#link {
+  height: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#link:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s all ease-in-out;
 }
 
 .listings-container #connect {
@@ -47,7 +73,17 @@ nav {
 
 @media screen and (max-width: 400px) {
   .listings-container #connect {
+    grid-column-start: 1;
+    grid-row-start: 2;
     justify-items: center;
+  }
+
+  .listings-container {
+    height: 1080px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr) 200px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
   }
 }
 
