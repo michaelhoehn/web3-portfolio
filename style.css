@@ -180,17 +180,6 @@ a.link:hover {
 } */
 
 @media screen and (max-width: 400px) {
-  .grid-container {
-    height: calc(100vh - 100px);
-    grid-template-columns: 100%;
-  }
-
-  .grid-container .logo {
-    grid-row-start: 2;
-    /* align-items: start;
-    padding-top: 25%; */
-  }
-
   .about {
     display: grid;
     align-items: end;
@@ -215,7 +204,8 @@ a.link:hover {
 
 @media screen and (max-width: 850px) {
   .grid-container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
+    grid-template-columns: 100%;
   }
 
   .grid-container .logo {
@@ -226,7 +216,9 @@ a.link:hover {
     display: grid;
     align-items: end;
     grid-row-start: 2;
-    font-size: 12px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 15px;
   }
 
   ul {
