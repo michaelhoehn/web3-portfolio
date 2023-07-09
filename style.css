@@ -61,6 +61,7 @@ footer {
   z-index: 1;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-top: 1px solid white;
 }
 
 footer a {
@@ -121,6 +122,50 @@ footer a {
 
 a.link {
   display: flex;
+}
+
+.inline-link-inverted {
+  margin-top: 0;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.inline-link-inverted:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+.button-container-inverted {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  /* justify-content: space-around; */
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.button-inverted {
+  text-decoration: none;
+  border: 1px solid black;
+  width: 50%;
+  background-color: white;
+  color: black;
+  border-color: black;
+  text-align: center;
+  padding: 15px 0;
+  /* align-self: center; */
+  /* text-wrap: nowrap; */
+}
+
+.button-inverted:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: all 0.2s ease-in;
 }
 
 .external {
@@ -230,6 +275,23 @@ a.link:hover {
 
   nav {
     height: 250px;
+  }
+
+  .button-container-inverted {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    column-gap: 10px;
+    width: 100%;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding-top: 20px;
+  }
+
+  .button-inverted {
+    font-size: 12px;
+    align-self: center;
   }
 }
 
