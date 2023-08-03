@@ -13,43 +13,89 @@ ul li a {
 }
 
 body {
+  background-color: white !important;
   overflow: auto;
 }
 
 nav {
+  display: grid;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 40px;
+  z-index: 1;
+  grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
+  height: 100px;
+  /* position: fixed; */
+  /* padding-left: 20px; */
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 40px;
 }
 
 .container {
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 100px repeat(6, 550px);
   /* align-items: end; */
   padding-left: 20px;
   padding-right: 20px;
   min-width: 0;
   min-height: 0;
-  row-gap: 40px;
+  row-gap: 80px;
 }
 
-.listing-container {
+.listing-container.landscape {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 200px repeat(3, 100px);
+  grid-template-columns: 780px 300px;
+  grid-template-rows: repeat(4, 100px);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.listing-container.portrait {
+  display: grid;
+  grid-template-columns: 780px 300px;
+  grid-template-rows: repeat(4, 100px) 230px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#abacus.listing-container.portrait {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 780px 300px;
+  grid-template-rows: repeat(4, 100px) 200px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 #obelisk.listing-container {
-  grid-row-start: 2;
-}
-
-#volute.listing-container {
   grid-row-start: 3;
 }
 
+#volute.listing-container {
+  grid-row-start: 4;
+}
+
+#ionic.listing-container {
+  grid-row-start: 5;
+}
+
+#abacus.listing-container {
+  grid-row-start: 6;
+}
+
 .listing-title {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 40px;
   grid-column-start: 2;
   grid-row-start: 1;
@@ -57,17 +103,26 @@ nav {
 
 .listing-description {
   display: grid;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   grid-column-start: 2;
   grid-row-start: 1;
   align-items: end;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .listing-img {
-  width: 500px;
-  padding-right: 20px;
+  min-width: 400px;
+  max-width: 770px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.listing-img.portrait {
+  min-width: 400px;
+  max-width: 450px;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 #listing-buy {
@@ -79,20 +134,41 @@ nav {
 
 #listing-price {
   display: grid;
-  align-items: start;
+  align-items: center;
   grid-column-start: 2;
-  grid-row-start: 4;
+  grid-row-start: 2;
 }
 
 #listing-info {
   display: grid;
   align-items: end;
-  grid-column-start: 1;
-  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-row-start: 5;
+  padding-top: 20px;
+  /* padding-bottom: 10px; */
 }
 
-.listing-img {
-  height: 300px;
+.collection-description {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  color: rgb(0, 0, 0);
+}
+
+.collection-title {
+  font-size: 40px;
+}
+
+.color-block {
+  display: grid;
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  margin-right: -10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -20px;
 }
 
 /* Manifold styling */
@@ -104,6 +180,11 @@ nav {
 
 .m-price {
   --m-marketplace-price--padding--left: 0px !important;
+}
+
+.m-attributes .m-attribute span {
+  color: rgb(255, 255, 255) !important;
+  font-size: x-small !important;
 }
 
 #listing01 {
@@ -135,22 +216,23 @@ nav {
 .spacer-text {
   display: grid;
   padding-top: 20px;
-  grid-row-start: 4;
+  grid-row-start: 7;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+  align-items: center;
   justify-items: center;
 }
 
 #link {
   height: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
 }
 
 #link:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: 0.2s all ease-in-out;
 }
 
@@ -159,10 +241,11 @@ nav {
   justify-items: end;
   align-items: start;
   margin-top: 10px;
-  grid-column-start: 6;
+  grid-column-start: 3;
   grid-row-start: 1;
   /* margin-top: 10px; */
   z-index: 1;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 400px) {
