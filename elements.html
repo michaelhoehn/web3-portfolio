@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>c_mplx</title>
+    <meta name="title" content="c_mplx | Elements" />
+    <meta name="description" content="architect // generative artist" />
+    <meta property="og:title" content="c_mplx | Elements" />
+    <meta property="og:description" content="architect // generative artist" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/michaelhoehn/web3-portfolio/main/images/mint-card-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="c_mplx | Featured Auction" />
+    <meta name="twitter:site" content="@c_mplx" />
+    <meta name="twitter:creator" content="@c_mplx" />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/michaelhoehn/web3-portfolio/main/images/mint-card-image.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="elements.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
+    />
+    <!-- Connection Widget -->
+    <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://connect.manifoldxyz.dev/2.2.4/connect.css"
+    />
+    <!-- Marketplace Widgets -->
+    <script src="https://marketplace.manifoldxyz.dev/3.5.4/marketplace.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://marketplace.manifoldxyz.dev/3.5.4/marketplace.css"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KJFN0KR2ER"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJFN0KR2ER");
+  </script>
+  <body style="background-color: black">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a class="link" href="about.html">
+              <span>About</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link link-active" href="mint.html">
+              <span>Mint</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="arch.html">
+              <span>A&T Exhibition</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="spaces.html">
+              <span>spaces</span>
+              <span class="comma">, </span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="art-studio.html">
+              <span>art studio</span>
+              <!-- <span class="comma">, </span> -->
+            </a>
+          </li>
+          <!-- <li data-bg="./images/4.png">
+            <a
+              class="link"
+              href="https://opensea.io/assets/ethereum/0x449f661c53ae0611a24c2883a910a563a7e42489/106"
+              target="_blank"
+            >
+              <span>Black Diamond</span>
+              <span class="external">(↗)</span>
+            </a>
+          </li> -->
+        </ul>
+        <!-- <script>
+          const body = document.querySelector("body");
+          const li = document.querySelectorAll("li");
+
+          li.forEach((el) => {
+            el.addEventListener("mouseover", () => {
+              let bg = el.getAttribute("data-bg");
+              body.style.background = `url(${bg}) no-repeat center /cover`;
+            });
+          });
+        </script> -->
+      </nav>
+      <!-- Connection -->
+      <div
+        id="connect"
+        data-widget="m-connect"
+        data-grant-type="signature"
+        data-client-id="92f5bc13152a5f87df471987a773b23a2a70617b73f105b5717db03917b8feb3"
+        data-app-name="c_mplx"
+        data-network="1"
+      ></div>
+      <div id="obelisk" class="listing-container">
+        <div
+          class="listing-img"
+          data-widget="m-listing-image-expandable"
+          data-id="6302"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Obelisk</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6302"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-price"
+          data-widget="m-listing-price"
+          data-id="6302"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6302"
+          data-network="1"
+        ></div>
+      </div>
+
+      <div id="volute" class="listing-container">
+        <div
+          class="listing-img"
+          data-widget="m-listing-image-expandable"
+          data-id="6301"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Volute</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6301"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-price"
+          data-widget="m-listing-price"
+          data-id="6301"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6301"
+          data-network="1"
+        ></div>
+      </div>
+      <div class="spacer-text">
+        <a id="link" href="https://twitter.com/c_mplx" target="_blank"
+          >View more works by c_mplx</a
+        >
+      </div>
+    </div>
+  </body>
+  <style>
+    /* All manifold styles must go here */
+    .manifold {
+      --manifold-theme--color--primary: hsl(0, 0%, 100%);
+      --manifold-theme--color--secondary: hsl(0, 0%, 0%);
+      /* --manifold-theme--color--error: red; */
+      --manifold-text--font-family--body: "Hanken Grotesk", Helvetica, Arial,
+        sans-serif;
+      --manifold-text--font-family--header: "Hanken Grotesk", Helvetica, Arial,
+        sans-serif;
+      --manifold-border--width: 0px;
+      /* --manifold-border--color: hsl(0, 100%, 68%);
+--manifold-border--radius: 100px; */
+    }
+
+    #m-connection,
+    .m-connection {
+      --manifold-border--radius: 0px;
+      --manifold-border--color: hsla(0, 0%, 100%, 0.87);
+      --manifold-text--font-size--body: 12px;
+      --manifold-border--width: 0px;
+      height: auto;
+      width: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+    }
+  </style>
+  <footer>
+    <div id="contact">
+      <a
+        class="first"
+        href="https://twitter.com/messages/compose?recipient_id=1475544191119757316&text=Hello%20c_mplx!"
+        target="_blank"
+      >
+        <span>Collaborate</span>
+      </a>
+      <a href="https://twitter.com/c_mplx" target="_blank">
+        <span>Twitter</span>
+      </a>
+      <a class="last" href="https://foundation.app/@c_mplx" target="_blank">
+        <span>Foundation</span>
+      </a>
+    </div>
+  </footer>
+</html>
