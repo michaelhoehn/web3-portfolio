@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
     <title>c_mplx</title>
-    <meta name="title" content="c_mplx | Featured" />
+    <meta name="title" content="c_mplx | Elements" />
     <meta name="description" content="architect // generative artist" />
-    <meta property="og:title" content="c_mplx | Featured" />
+    <meta property="og:title" content="c_mplx | Elements" />
     <meta property="og:description" content="architect // generative artist" />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/michaelhoehn/web3-portfolio/main/images/mint-card-image.png"
-    ></meta>
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="c_mplx | Featured Auction" />
     <meta name="twitter:site" content="@c_mplx" />
@@ -20,22 +20,24 @@
     <meta
       name="twitter:image"
       content="https://raw.githubusercontent.com/michaelhoehn/web3-portfolio/main/images/mint-card-image.png"
-    ></meta>
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="mint-style.css" />
+    <link rel="stylesheet" type="text/css" href="elements.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
     />
+    <!-- Connection Widget -->
     <script src="https://connect.manifoldxyz.dev/2.2.4/connect.umd.min.js"></script>
     <link
       rel="stylesheet"
       href="https://connect.manifoldxyz.dev/2.2.4/connect.css"
     />
-    <script src="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.umd.min.js"></script>
+    <!-- Marketplace Widgets -->
+    <script src="https://marketplace.manifoldxyz.dev/3.5.4/marketplace.umd.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://marketplace.manifoldxyz.dev/3.4.2/marketplace.css"
+      href="https://marketplace.manifoldxyz.dev/3.5.4/marketplace.css"
     />
   </head>
   <!-- Google tag (gtag.js) -->
@@ -53,7 +55,7 @@
     gtag("config", "G-KJFN0KR2ER");
   </script>
   <body style="background-color: black">
-    <div class="listings-container">
+    <div class="container">
       <nav>
         <ul>
           <li>
@@ -63,8 +65,8 @@
             </a>
           </li>
           <li>
-            <a class="link link-active" href="mint.html">
-              <span>Mint</span>
+            <a class="link link-active" href="elements.html">
+              <span>Elements</span>
               <span class="comma">, </span>
             </a>
           </li>
@@ -109,6 +111,7 @@
           });
         </script> -->
       </nav>
+      <!-- Connection -->
       <div
         id="connect"
         data-widget="m-connect"
@@ -117,12 +120,143 @@
         data-app-name="c_mplx"
         data-network="1"
       ></div>
-      <div
-        class="art"
-        data-widget="m-layout-complete-listing"
-        data-id="6178"
-        data-network="1"
-      ></div>
+      <!-- Description -->
+      <div class="collection-description">
+        <p class="collection-title">Elements</p>
+        <p class="collection-text">
+          A deconstructivist exploration of foundational architectural
+          elements.<br /><br />
+          First a basic architectural element is extracted, then completely
+          deconstructed to it's most abstract formal components.<br /><br />
+          This collection represents a way in which one can view and understand
+          their constructed surroundings.
+        </p>
+      </div>
+      <!-- Listings -->
+      <div id="obelisk" class="listing-container landscape">
+        <div class="color-block"></div>
+        <div
+          class="listing-img"
+          data-widget="m-listing-image-expandable"
+          data-id="6358"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Obelisk</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6358"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6358"
+          data-network="1"
+        ></div>
+      </div>
+      <div id="abacus" class="listing-container portrait">
+        <div class="color-block"></div>
+        <div
+          class="listing-img portrait"
+          data-widget="m-listing-image-expandable"
+          data-id="6178"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Abacus</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6178"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6178"
+          data-network="1"
+        ></div>
+      </div>
+      <div id="volute" class="listing-container landscape">
+        <div class="color-block"></div>
+        <div
+          class="listing-img"
+          data-widget="m-listing-image-expandable"
+          data-id="6361"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Volute</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6361"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6361"
+          data-network="1"
+        ></div>
+      </div>
+      <div id="ionic" class="listing-container portrait">
+        <div class="color-block"></div>
+        <div
+          class="listing-img portrait"
+          data-widget="m-listing-image-expandable"
+          data-id="6359"
+          data-network="1"
+        ></div>
+        <!-- <img class="listing-img" src="./images/elements/1.png" /> -->
+        <div class="listing-title">
+          <p>Ionic</p>
+        </div>
+        <div class="listing-description">
+          <p>
+            This is a description of the artwork featured above. It's meaningful
+            because of the ways that it is.
+          </p>
+        </div>
+        <div
+          id="listing-buy"
+          data-widget="m-listing-bid-form-rich"
+          data-id="6359"
+          data-network="1"
+        ></div>
+        <div
+          id="listing-info"
+          data-widget="m-listing-attributes"
+          data-id="6359"
+          data-network="1"
+        ></div>
+      </div>
       <div class="spacer-text">
         <a id="link" href="https://twitter.com/c_mplx" target="_blank"
           >View more works by c_mplx</a
