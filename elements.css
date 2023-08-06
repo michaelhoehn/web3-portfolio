@@ -3,13 +3,26 @@ body {
   background-color: white;
 }
 
+.inline-link {
+  margin-top: 0;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.inline-link:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+
 /* basic site content as grid */
 
 .content-grid-container {
   display: grid;
-  height: 450px; /* calc(100vh - 50px); */
+  height: 500px; /* calc(100vh - 50px); */
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 250px 200px;
+  grid-template-rows: 250px 250px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -144,7 +157,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 200px 50px 250px;
     row-gap: 20px;
-    height: 500px;
+    height: 550px;
   }
 
   #connect {
@@ -201,5 +214,9 @@ body {
 
   .m-marketplace span {
     font-size: x-small !important;
+  }
+
+  #link {
+    font-size: small;
   }
 }
