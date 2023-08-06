@@ -80,6 +80,7 @@ body {
 .flex-item.listing-img {
   min-width: 300px;
   max-width: 712px;
+  padding-bottom: 20px;
 }
 
 .listing-title {
@@ -155,9 +156,10 @@ body {
 @media screen and (max-width: 425px) {
   .content-grid-container {
     grid-template-columns: 100%;
-    grid-template-rows: 200px 50px 250px;
-    row-gap: 20px;
-    height: 550px;
+    grid-template-rows: 200px 50px 150px;
+    row-gap: 30px;
+    height: 400px;
+    padding-bottom: 50px;
   }
 
   #connect {
