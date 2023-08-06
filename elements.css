@@ -22,7 +22,7 @@ body {
   display: grid;
   height: 500px; /* calc(100vh - 50px); */
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 250px 250px;
+  grid-template-rows: 250px 150px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -44,7 +44,8 @@ body {
 
 .collection-description {
   padding-left: 0px;
-  display: block;
+  display: grid;
+  align-items: end;
   grid-row-start: 2;
   background-color: white;
   flex-wrap: wrap;
@@ -158,7 +159,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 200px 50px 150px;
     row-gap: 30px;
-    height: 400px;
+    height: 500px;
     padding-bottom: 50px;
   }
 
@@ -176,18 +177,21 @@ body {
     grid-column-start: 1;
     grid-row-start: 3;
     grid-template-columns: 100%;
-    grid-template-rows: 30px 150px;
+    grid-template-rows: 30px 120px;
     background-color: white;
     flex-wrap: wrap;
+    align-items: end;
     padding-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 30px;
     padding-right: 0px;
     padding-left: 0px;
   }
 
   .collection-title {
+    display: grid;
+    align-items: end;
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
