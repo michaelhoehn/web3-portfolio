@@ -103,10 +103,6 @@ body {
   color: rgb(199, 199, 199);
 }
 
-#listing-buy {
-  max-width: 700px;
-}
-
 #listing-info {
   max-width: 700px;
   padding-top: 20px;
@@ -115,12 +111,41 @@ body {
 }
 
 #listing-buy {
-  /* border-top: 1px white solid; */
-  max-width: 700px;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  justify-items: center;
+  padding-top: 15px;
+}
+
+/* .button-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-row-start: 4;
+} */
+
+.button {
+  text-decoration: none;
+  border: 1px solid white;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-color: white;
+  text-align: center;
+  padding: 15px 0;
+  align-self: center;
+  text-wrap: nowrap;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transition: all 0.2s ease-in;
 }
 
 .m-marketplace {
