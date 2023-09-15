@@ -115,6 +115,8 @@ body {
   align-items: start;
   justify-items: center;
   padding-top: 15px;
+  min-width: 300px;
+  max-width: 712px;
 }
 
 /* .button-container {
@@ -129,9 +131,9 @@ body {
 } */
 
 .button {
+  width: 100%;
   text-decoration: none;
   border: 1px solid white;
-  width: 100%;
   background-color: black;
   color: white;
   border-color: white;
