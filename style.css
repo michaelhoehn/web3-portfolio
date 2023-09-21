@@ -7,7 +7,7 @@
 
 body {
   line-height: 1;
-  transition: background 300ms ease-in 200ms;
+  /* transition: background 300ms ease-in 200ms; */
   overflow: hidden;
 }
 
@@ -30,8 +30,28 @@ nav {
   flex-wrap: wrap;
   padding-top: 20px;
   font-size: 30px;
-  row-gap: 10px;
-  column-gap: 5px;
+  column-gap: 8px;
+  align-content: flex-start;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a.link {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  align-items: center;
+}
+
+a.link:hover {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: all ease-in-out 0.2s;
 }
 
 .grid-container .logo {
@@ -54,7 +74,7 @@ nav {
 .nav-link:hover {
   color: white;
   background-color: black;
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease-in-out; */
 }
 
 .active {
@@ -194,12 +214,6 @@ footer a {
   transition: all 0.2s ease-in;
 }
 
-a.link:hover {
-  background-color: black;
-  color: white;
-  transition: all 0.2s ease-in-out;
-}
-
 @keyframes fadeInOutAnimation {
   0% {
     opacity: 0;
@@ -231,29 +245,6 @@ a.link:hover {
 }
 #load5 {
   animation: fadeInOutAnimation 3s;
-}
-
-@media screen and (max-width: 400px) {
-  /* .about {
-    display: grid;
-    align-items: end;
-    grid-row-start: 1;
-    font-size: 12px;
-  }
-
-  ul {
-    font-size: 20px;
-    display: block;
-    line-height: 25px;
-  }
-
-  #contact {
-    font-size: 12px;
-  } */
-
-  /* nav {
-    height: 250px;
-  } */
 }
 
 @media screen and (max-width: 850px) {
