@@ -7,9 +7,6 @@
 }
 
 body {
-  /* background: linear-gradient(to bottom right, #ffffff, #ff9595, #e82cc9); */
-
-  /* background-color: black; */
   box-sizing: border-box;
   background-size: cover;
   background-position: center center;
@@ -19,7 +16,7 @@ body {
 .grid-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .main-container {
@@ -38,14 +35,14 @@ body {
   justify-content: center;
   margin: auto;
   min-width: 50%;
-  max-width: 75%;
+  max-width: 70%;
   width: 100%;
   height: auto;
 }
 
 .logo img {
   width: auto;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
