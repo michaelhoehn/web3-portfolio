@@ -27,9 +27,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk"
     />
+    <link rel="stylesheet" href="https://mint.highlight.xyz/assets/embed.css" />
     <link rel="icon" type="image/png" href="./images/c-fav.png">
   </head>
   <!-- Google tag (gtag.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-KJFN0KR2ER"
@@ -47,11 +49,12 @@
     <main>
       <div class="grid-container">
         <div class="main-container">
-          <div class="logo">
-            <img src="./images/c_mplxLogo-white-03.svg" />
-          </div>
+          <div class="logo" id="p5-container"></div>
           <div class="secondaryLinks">
-                <a class="link " href="https://app.manifold.xyz/c/tezpole" target="_blank">
+                <a class="link " href="https://warpcast.com/cmplx" target="_blank">
+                  <img class="thumbnail farcaster-logo" src="./images/farcaster.png">
+                </a>
+                <a class="link " href="https://www.curate.page/t/cmplx-editions" target="_blank">
                   <img class="thumbnail manifold-logo" src="./images/manifold.png">
                 </a>
                 <a class="link " href="https://foundation.app/@cmplx" target="_blank">
@@ -65,6 +68,9 @@
                 </a>
           </div>
           <div class="links-container">
+            <div class="mint-container">
+              <div id="mint-card" class="item type-d" data-widget="highlight-mint-card" data-mint-collection-id="664d6d58fefa836a7f1fa541" data-theme='{"bgColor":"#303030","textColor":"#ffffff","accentColor":"#895bf5","fontFamily":"Arial"}' ></div>
+            </div>
             <div id="feature" class="item type-a">
               <a href="https://foundation.app/collection/scrbl" target="_blank"></a>
               <div class="description">Scribblography</div>
@@ -99,5 +105,7 @@
     </main>
     <footer>
     </footer>
+    <script src="sketch.js"></script>
+    <script type="module" crossorigin="true" src="https://mint.highlight.xyz/assets/embed.js?v=1"></script>
   </body>
 </html>

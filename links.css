@@ -24,7 +24,7 @@ body {
 .main-container {
   display: grid;
   grid-column-start: 2;
-  grid-template-rows: 160px 30px auto;
+  grid-template-rows: 160px 50px auto;
   height: 100vh;
   overflow: hidden;
   backdrop-filter: blur(50px);
@@ -78,6 +78,10 @@ body {
   width: 60px;
 }
 
+.thumbnail.farcaster-logo {
+  width: 40px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -93,12 +97,12 @@ body {
 .links-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 175px) 200px;
+  grid-template-rows: repeat(5, 175px);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  row-gap: 10px;
+  row-gap: 35px;
   overflow: auto;
   padding-bottom: 50px;
   /* max-height: calc(100vh - 200px); */
@@ -112,22 +116,38 @@ body {
 
 .links-container .type-a {
   margin-top: 10px;
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
 }
 
 .links-container .item-container {
   display: flex;
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   gap: 10px;
+}
+
+.main-container #mint-card {
+  padding-top: 10px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  padding-left: 10px;
 }
 
 .links-container .item-container .type-b {
   width: 100%;
+}
+
+.item.type-b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .item {
@@ -153,8 +173,8 @@ body {
 #oncyber {
   background-image: url(/images/spaces/Final\ Cover.jpg);
   grid-template-rows: 7fr 2fr;
-  grid-row-start: 5;
-  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-column-start: 2;
   grid-column-end: 3;
   background-position: center bottom;
 }
@@ -162,8 +182,8 @@ body {
 #generative {
   background-image: url(/images/generativeArt.png);
   grid-template-rows: 7fr 2fr;
-  grid-row-start: 4;
-  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-column-start: 2;
   grid-column-end: 3;
 }
 
@@ -178,7 +198,7 @@ body {
   text-align: left;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 6;
+  grid-row-start: 5;
   background: linear-gradient(to right, #000000, #868686);
 }
 
@@ -209,10 +229,10 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .logo img {
+  /* .logo img {
     width: 200px;
     height: auto;
-  }
+  } */
 
   .main-container {
     grid-column-start: 1;
