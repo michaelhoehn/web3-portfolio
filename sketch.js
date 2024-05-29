@@ -2,14 +2,10 @@ let message = "cmplx";
 let x, y;
 let easing = 0.005;
 
-function preload() {
-    font = loadFont('./fonts/HankenGrotesk-VariableFont_wght.ttf');
-}
-
 function setup() {
     let canvas = createCanvas(900, 160);
     canvas.parent('p5-container');
-    textFont(font);
+    textFont('Helvetica');
     textSize(100);
     fill(255);
     noStroke();
