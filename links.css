@@ -132,11 +132,18 @@ canvas {
     max-height: calc(100vh - 200px);
 }
 
-.links-container .item {
+.links-container .item,
+a.item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* Ensures content is aligned to the bottom */
     border-radius: 10px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .links-container .type-a {
@@ -164,12 +171,6 @@ canvas {
 .item.type-b {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-}
-
-.item {
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center center;
 }
 
 #feature {
@@ -224,6 +225,7 @@ canvas {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     backdrop-filter: blur(10px);
+    padding: 10px;
 }
 
 @media screen and (max-width: 900px) {
